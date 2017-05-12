@@ -1,0 +1,12 @@
+******
+Setup
+******
+-Window -> References -> Maven -> Archetypes -> Add Remote Catalog -> Catalog File: http://repo1.maven.org/maven2/archetype-catalog.xml
+-new -> project -> Maven Project -> next -> org.glassfish.jersey.archetypes jersey-example-java8-webapp
+
+============
+Start Apache
+============
+set JPDA_TRANSPORT=dt_socket
+set JPDA_ADDRESS=5050
+catalina jpda run

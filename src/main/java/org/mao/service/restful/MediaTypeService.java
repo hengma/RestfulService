@@ -11,7 +11,7 @@ import com.google.gson.Gson;
 
 
 @Path("/rest")
-public class RestfulService {
+public class MediaTypeService {
 
     @GET
     @Path("/TextPlan")
@@ -40,5 +40,12 @@ public class RestfulService {
     	customer.setName("APPLICATION_JSON");
     	Gson gson = new Gson();
     	return  gson.toJson(customer);
+    }
+    
+    @GET
+    @Path("/AllMediaType")
+    @Produces({MediaType.TEXT_PLAIN, MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    public String AllMediaType() {
+    	return "All Medida Type";
     }
 }

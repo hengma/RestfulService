@@ -44,7 +44,7 @@ public class HttpMethodService {
 	}
 	
 	/**
-	 * Delete 404 (Not Found), unless you want to delete the whole collection—not often desirable.
+	 * Delete 404 (Not Found), unless you want to delete the whole collection not often desirable.
 	 * 200 (OK). 404 (Not Found), if ID not found or invalid.
 	 * 
 	 */	
